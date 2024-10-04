@@ -1,0 +1,148 @@
+
+:root{
+    /* color */
+    /* --nations-purple: hsl(214, 56%, 58%); */
+    /* --bright-violet: hsl(214, 57%, 51%); */
+    --nations-purple: hsl(333, 23%, 51%);
+    --bright-violet: hsl(282, 100%, 50%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --black-coral: hsl(225, 8%, 42%);
+    --oxford-blue: hsl(208, 97%, 12%);
+    --yale-blue: hsl(214, 72%, 33%);
+    --blue-ncs: hsl(197, 100%, 36%);
+    --gunmetal: hsl(206, 34%, 20%);
+    /* --gray-dark: hsl(0, 0%, 88%); */
+    --gray-dark: hsl(0, 0%, 60%);
+    --cultured: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 25%);
+    --jet: hsl(0, 0%, 20%);
+  
+    /* kiểu chữ */
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-montserrat: "Montserrat", sans-serif;
+  
+    --fs-1: calc(20px + 3.5vw);
+    --fs-2: calc(18px + 1.6vw);
+    --fs-3: calc(16px + 0.45vw);
+    --fs-4: 15px;
+    --fs-5: 14px;
+    --fs-6: 13px;
+    --fs-7: 12px;
+    --fs-8: 11px;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+  
+    /* transition */
+    --transition: 0.25s ease-in-out;
+  
+    /* spacing */
+    --section-padding: 60px;
+  
+    /* border-radius */
+    --radius-15: 15px;
+    --radius-25: 25px;
+  }
+  
+  .header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 61px;
+    z-index: 4;
+  }
+.breadcumb{
+    margin-top: 140px;
+    text-align: center;
+    background-color: var(--bright-violet);
+    color: #ffffff;
+}
+
+.breadcumb a{
+    display: inline;
+    color: #ffffff;
+}
+
+.breadcumb-title h1{
+    padding-top: 30px;
+}
+.breadcumb-subtitle{
+    padding: 20px 0;
+}
+
+.post-wrapper{
+   display: flex;
+   gap: 10px;
+   padding: 50px 0;
+}
+
+.post-left{
+    width: 72%;
+}
+
+.post-right{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+}
+
+.post-right-item{
+    position: relative;
+    /* height: 50%; */
+}
+
+.post-right-item .post-image{
+    /* height: 100%; */
+}
+
+.post-right-item .post-image img{
+    /* height: 100%; */
+    /* width: auto; */
+}
+.post-image img{
+    width: 100%;
+}
+
+.post-image{
+    position: relative;
+}
+
+.post-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.social-link{
+    color: var(--black);
+  }
+
+@media(min-width: 992px){
+    
+    .header-top .wrapper{
+        color:#000
+      }
+}
+
+@media (max-width: 576px) {
+    
+    .post-wrapper{
+        flex-direction: column;
+    }
+    .post-right,.post-left{
+        width: 100%;
+    }
+    
+}

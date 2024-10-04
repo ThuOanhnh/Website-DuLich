@@ -1,0 +1,151 @@
+
+:root{
+    /* color */
+    /* --nations-purple: hsl(214, 56%, 58%); */
+    /* --bright-violet: hsl(214, 57%, 51%); */
+    --nations-purple: hsl(333, 23%, 51%);
+    --bright-violet: hsl(282, 100%, 50%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --black-coral: hsl(225, 8%, 42%);
+    --oxford-blue: hsl(208, 97%, 12%);
+    --yale-blue: hsl(214, 72%, 33%);
+    --blue-ncs: hsl(197, 100%, 36%);
+    --gunmetal: hsl(206, 34%, 20%);
+    /* --gray-dark: hsl(0, 0%, 88%); */
+    --gray-dark: hsl(0, 0%, 60%);
+    --cultured: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 25%);
+    --jet: hsl(0, 0%, 20%);
+  
+    /* kiểu chữ */
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-montserrat: "Montserrat", sans-serif;
+  
+    --fs-1: calc(20px + 3.5vw);
+    --fs-2: calc(18px + 1.6vw);
+    --fs-3: calc(16px + 0.45vw);
+    --fs-4: 15px;
+    --fs-5: 14px;
+    --fs-6: 13px;
+    --fs-7: 12px;
+    --fs-8: 11px;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+  
+    /* transition */
+    --transition: 0.25s ease-in-out;
+  
+    /* spacing */
+    --section-padding: 60px;
+  
+    /* border-radius */
+    --radius-15: 15px;
+    --radius-25: 25px;
+  }
+
+  .header{
+    position: unset;
+    padding-top: 0;
+  }
+.breadcumb{
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--bright-violet);
+    color: #ffffff;
+}
+
+.breadcumb a{
+    display: inline;
+    color: #ffffff;
+}
+
+.breadcumb-title h1{
+    padding-top: 30px;
+}
+.breadcumb-subtitle{
+    padding: 20px 0;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+input[type="text"], input[type="email"]
+textarea{
+    padding: 5px 0;
+    width: 100%;
+  
+    
+}
+.info{
+    margin: 0 auto;
+    width: 600px;
+
+}
+.info dl{
+    background-color: #f3f3f3;
+    padding: 10px 30px 15px;
+}
+.info dl dt{
+    font-weight: var(--fw-600);
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.info dl dd{
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.info p{
+    text-align: center;
+}
+.info p button{
+    background-color: var(--bright-violet);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    
+}
+
+
+
+
+/* Media querries */
+@media(min-width: 992px){
+    .header.active .header-top{
+        margin-top: 80px;
+    }
+    .header-top .wrapper{
+        color:#000
+      }
+    
+    
+  }
+
+
+@media only screen and (max-width: 640px){
+    .info{
+        max-width: 600px;
+        width: auto;
+    }
+    .info dl{
+        padding: 10px 20px 15px;
+    }
+    .info p button{
+        width: 50%;
+        min-width: 200px;
+    }
+}
+

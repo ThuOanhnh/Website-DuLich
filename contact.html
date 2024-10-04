@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/plane.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    
+</head>
+<body>
+
+    <header class="header active" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+          <div class="container">
+
+              <a href="tel:+0134897125" class="helpline-box">
+
+                  <div class="icon-box">
+                      <ion-icon name="call-outline"></ion-icon>
+                  </div>
+
+                  <div class="wrapper">
+                      <p class="helpline-title">Liên hệ số:</p>
+                      <p>+01 (348) 971 25</p>
+                  </div>
+               </a>
+
+               <a href="#" class="logo">
+                  <img src="./assets/images/logo.svg" alt="Travel logo">
+               </a>
+
+               <div class="header-btn-group">
+                  <button class="search-btn" aria-label="Search">
+                      <ion-icon name="search"></ion-icon>
+                  </button>
+
+                  <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                      <ion-icon name="menu-outline"></ion-icon>
+                  </button>
+               </div>
+          </div>
+      </div>
+
+      <div class="header-bottom">
+          <div class="container">
+              <ul class="social-list">
+                  <li>
+                      <a href="#" class="social-link">
+                          <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="social-link">
+                          <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="social-link">
+                          <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                      <ion-icon name="logo-skype"></ion-icon>
+                  </a>
+              </li>
+              </ul>
+
+              <nav class="navbar" data-navbar>
+                  <div class="navbar-top">
+                      <a href="#" class="logo">
+                          <img src="./assets/images/logo-blue.svg" alt="Travel logo">
+                      </a>
+
+                      <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                          <ion-icon name="close-outline"></ion-icon>
+                      </button>
+                  </div>
+
+                  <ul class="navbar-list">
+                      <li>
+                          <a href="#home" class="navbar-link" data-nav-link>trang chủ</a>
+                      </li>
+                      
+                      <li>
+                          <a href="#destination" class="navbar-link" data-nav-link>điểm đi</a>
+                      </li>
+                      <li>
+                          <a href="#package" class="navbar-link" data-nav-link>điểm đến</a>
+                      </li>
+                      <li>
+                          <a href="#gallery" class="navbar-link" data-nav-link>trưng bày</a>
+                      </li>
+                      <li>
+                          <a href="#contact" class="navbar-link" data-nav-link>liên hệ</a>
+                      </li>
+                  </ul>
+              </nav>
+
+              <button class="btn btn-primary">Tìm kiếm</button>
+          </div>
+      </div>
+  </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="breadcumb">
+            <div class="breadcumb-title"><h1>Ưu đãi du lịch</h1></div>
+            <div class="breadcumb-subtitle">
+                <a href="index.html">Trang chủ</a> - <a href="contact.html">Liên hệ</a>
+            </div>
+        </div>
+
+        
+        <h2>Liên hệ</h2>
+         <div class="info">
+          <form action="" method="">
+              <dl>
+                  <dt><label for="name">Họ tên</label></dt>
+                  <dd><input type="text" name="name" id="name" required></dd>
+      
+                  <dt><label for="name">Email</label></dt>
+                  <dd><input type="email" name="email" id="email" required></dd>
+      
+                  <dt>Giới tính</dt>
+                  <dd>
+                      <input type="radio" name="gender" id="male" value="" required>
+                      <label for="male">Nam</label> 
+                      <input type="radio" name="gender" id="female" value="" required>
+                      <label for="female">Nữ</label> 
+                      <input type="radio" name="gender" id="other" value="" required>
+                      <label for="other">Khác</label>
+                  </dd>
+      
+                  
+                  <dt>Số điện thoại</dt>
+                  <dd>
+                    <input type="text" id="phone" name="phone" id="phone" value="" placeholder="Nhập số điện thoại..." required>
+                  </dd>
+      
+                  <dt><label for="message">Lời nhắn</label></dt>
+                  <dd><textarea cols="50" rows="10" name="message" id="message"required></textarea></dd>
+              </dl>
+      
+              <p><button type="submit">Liên hệ</button></p>
+          </form>
+      </div>
+
+
+        <!-- <h1>Liên hệ</h1>
+        <form id="form">
+          <div class="input__container">
+            <label for="name">Họ tên</label>
+              
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input__container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input__container">
+            <label for="message">Lời nhắn</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button>Gửi</button>
+        </form> -->
+
+
+
+
+        </div>
+    </main>
+    <!-- MAIN -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+         <div class="container">
+             <div class="footer-brand">
+                 <a href="#" class="logo">
+                     <img src="./assets/images/logo.svg" alt="Travel logo">
+                 </a>
+                 <p class="footer-text">
+                   Chúng tôi là một trang web du lịch uy tín và đáng tin cậy giúp bạn đặt tour dễ dàng hơn.
+                 </p>
+             </div>
+ 
+             <div class="footer-contact">
+                 <h4 class="contact-title">Liên hệ</h4>
+                 <p class="contact-text">Hãy gọi chúng tôi</p>
+ 
+                 <ul>
+ 
+                     <li class="contact-item">
+                       <ion-icon name="call-outline"></ion-icon>
+         
+                       <a href="tel:+01123456790" class="contact-link">+01 (348) 971 25</a>
+                     </li>
+         
+                     <li class="contact-item">
+                       <ion-icon name="mail-outline"></ion-icon>
+         
+                       <a href="mailto:info.tourly.com" class="contact-link">travel.tourly.com</a>
+                     </li>
+         
+                     <li class="contact-item">
+                       <ion-icon name="location-outline"></ion-icon>
+         
+                       <address>21 Tran Hung Dao, Viet Nam</address>
+                     </li>
+         
+                   </ul>
+             </div>
+ 
+             <div class="footer-form">
+ 
+                 <p class="form-text">
+                   
+                   Hãy nhấn đăng ký để biết thêm thông tin chi tiết !
+                  
+                 </p>
+       
+                 <form action="" class="form-wrapper">
+                   <input type="email" name="email" class="input-field" placeholder="Email của bạn ..." required>
+       
+                   <button type="submit" class="btn btn-secondary">Đăng ký</button>
+                 </form>
+       
+               </div>
+       
+             </div>
+           </div>
+       
+           <div class="footer-bottom">
+             <div class="container">
+       
+               <p class="copyright">
+                 &copy; Họ tên: Văn Thị Thu Oanh <a href="">DH52102172</a>. Lớp D21_TH01 | Nhóm 2 Thứ 7 Ca 4
+               </p>
+       
+               <ul class="footer-bottom-list">
+       
+                 <li>
+                   <a href="#" class="footer-bottom-link">Chính sách</a>
+                 </li>
+       
+                 <li>
+                   <a href="#" class="footer-bottom-link">Điều kiện</a>
+                 </li>
+       
+                 <li>
+                   <a href="#" class="footer-bottom-link">Q&A</a>
+                 </li>
+       
+               </ul>
+       
+ 
+         </div>
+        </div>
+     </footer>
+ 
+     
+     <a href="#top" class="go-top active" data-go-top>
+         <ion-icon name="chevron-up-outline"></ion-icon>
+     </a>
+        
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj+Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/medium-zoom.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

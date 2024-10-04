@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch</title>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="shortcut icon" href="./assets/images/plane.jpg" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+</head>
+
+
+  <!-- HEADER -->
+<body id="top">
+    <header class="header active" data-header>
+        <div class="overlay" data-overlay></div>
+        <div class="header-top">
+            <div class="container">
+
+                <a href="tel:+0134897125" class="helpline-box">
+
+                    <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+
+                    <div class="wrapper">
+                        <p class="helpline-title">Liên hệ số:</p>
+                        <p>+01 (348) 971 25</p>
+                    </div>
+                 </a>
+
+                 <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Travel logo">
+                 </a>
+
+                 <div class="header-btn-group">
+                    <button class="search-btn" aria-label="Search">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                 </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link">
+                          <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </li>
+                </ul>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo-blue.svg" alt="Travel logo">
+                        </a>
+
+                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>trang chủ</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#destination" class="navbar-link" data-nav-link>điểm đi</a>
+                        </li>
+                        <li>
+                            <a href="#package" class="navbar-link" data-nav-link>điểm đến</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="navbar-link" data-nav-link>trưng bày</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="navbar-link" data-nav-link>liên hệ</a>
+                        </li>
+                        <li>
+                          <a href="labs.html" class="navbar-link" data-nav-link>lab thực hành</a>
+                      </li>
+                    </ul>
+                </nav>
+
+                <button class="btn btn-primary">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <article>
+           <!-- HERO -->
+            <section class="hero" id="home">
+                <div class="container">
+                    <h2 class="h1 hero-title">Du lịch vòng quanh thế giới</h2>
+                    <p class="hero-text">
+                      Du lịch là việc đi lại nhằm mục đích vui thú hoặc kinh doanh; cũng là lý thuyết và thực hành về tổ chức các chương trình đi du lịch,
+                       ngành kinh doanh nhằm thu hút,
+                       cung cấp và giải trí cho khách du lịch, và việc kinh doanh của các tổ chức điều hành các tour du lịch.
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary">
+                          <a href="learn-more.html" target="_blank">
+                            Đọc thêm
+                          </a>
+                        </button>
+
+                        <button class="btn btn-primary">
+                          <a href="contact.html" target="_blank">
+                            Liên hệ
+                          </a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+           <!-- TOUR -->
+            <section class="tour-search">
+                <div class="container">
+                    <form action="" class="tour-search-form">
+                        <div class="input-wrapper">
+                            <label for="destination" class="input-label">Tìm kiếm</label>
+                            <input type="text" name="destination" id="destination" required placeholder="Nhập điểm đi" class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="people" class="input-label">Số lượng</label>
+                            <input type="number" name="people" id="people" required placeholder="Số người" class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="checkin" class="input-label">Ngày đăng ký</label>
+              
+                            <input type="date" name="checkin" id="checkin" required class="input-field">
+                          </div>
+              
+                          <div class="input-wrapper">
+                            <label for="checkout" class="input-label">Ngày thanh toán</label>
+              
+                            <input type="date" name="checkout" id="checkout" required class="input-field">
+                          </div>
+              
+                          <button type="submit" class="btn btn-secondary">Khám phá thêm</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- POPULAR -->
+            <section class="popular" id="destination">
+                <div class="container">
+                    <p class="section-subtitle">Khám phá</p>
+                    <h2 class="h2 section-title">Điểm đi nổi tiếng</h2>
+                    <p class="section-text">
+                      Du lịch có thể là du lịch nội địa hoặc du lịch quốc tế với cả ý nghĩa đến và đi 
+                      và có vai trò quan trọng đối với cán cân thanh toán của một quốc gia.
+                      </p>
+
+                      <ul class="popular-list">
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/popular-4.jpg" alt="San miguel, italy" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">Viet Nam</a>
+                                    </p>
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Ha Noi</a>
+                                    </h3>
+                                    <p class="card-text">
+                                      
+                                      Đây là thành phố lớn nhất Việt Nam, nằm ở vị trí trung tâm chính trị.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="popular-card">
+
+                                <figure class="card-img">
+                                  <img src="./assets/images/popular-5.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                                </figure>
+                
+                                <div class="card-content">
+                
+                                  <div class="card-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                  </div>
+                
+                                  <p class="card-subtitle">
+                                    <a href="#">Han Quoc</a>
+                                  </p>
+                
+                                  <h3 class="h3 card-title">
+                                    <a href="#">Seoul</a>
+                                  </h3>
+                
+                                  <p class="card-text">
+                                    Seoul ngày nay là một trong những thành phố lớn nhất thế giới tính theo dân số.
+                                  </p>
+                
+                                </div>
+                
+                              </div>
+                        </li>
+
+
+                        <li>
+                            <div class="popular-card">
+
+                                <figure class="card-img">
+                                  <img src="./assets/images/popular-6.jpg" alt="Kyoto temple, japan" loading="lazy">
+                                </figure>
+                
+                                <div class="card-content">
+                
+                                  <div class="card-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                  </div>
+                
+                                  <p class="card-subtitle">
+                                    <a href="#">Trung Quoc</a>
+                                  </p>
+                
+                                  <h3 class="h3 card-title">
+                                    <a href="#">Bac Kinh</a>
+                                  </h3>
+                
+                                  <p class="card-text">
+                                    
+                                    Bắc Kinh, là thủ đô của nước Cộng hòa Nhân dân Trung Hoa. 
+                                    Thành phố nằm ở miền Hoa Bắc
+                                </div>
+                
+                              </div>
+                        </li>
+                      </ul>
+
+                      <button class="btn btn-primary">Khám phá thêm</button>
+                </div>
+            </section>
+
+            <!-- PACKAGES -->
+            <section class="package" id="package">
+                <div class="container">
+        
+                  <p class="section-subtitle">Phổ biến</p>
+        
+                  <h2 class="h2 section-title">Điểm đến nổi tiếng</h2>
+        
+                  <p class="section-text">
+                    Sự kết hợp của các yếu tố hữu hình và vô hình, chẳng hạn như tài nguyên thiên nhiên, văn hóa và nhân tạo, điểm đến, cơ sở vật chất, 
+                    dịch vụ và hoạt động xung quanh một trung tâm quan tâm cụ thể.
+                  </p>
+        
+                  <ul class="package-list">
+        
+                    <li>
+                      <div class="package-card">
+        
+                        <figure class="card-banner">
+                          <img src="./assets/images/packege-4.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <h3 class="h3 card-title">
+                            Khám phá cảnh quan thiên nhiên hùng vĩ ở Việt Nam</h3>
+        
+                          <p class="card-text">
+                            
+                            Từ trên cao nhìn xuống, Vịnh Hạ Long trông như một khối nước khổng lồ, vô cùng sống động
+                            bức tranh với hàng ngàn hòn đảo đá.
+                          </p>
+        
+                          <ul class="card-meta-list">
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="time"></ion-icon>
+        
+                                <p class="text">9D/6N</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="people"></ion-icon>
+        
+                                <p class="text">pax: 5</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="location"></ion-icon>
+        
+                                <p class="text">Viet Nam</p>
+                              </div>
+                            </li>
+        
+                          </ul>
+        
+                        </div>
+        
+                        <div class="card-price">
+        
+                          <div class="wrapper">
+        
+                            <p class="reviews">(22 reviews)</p>
+        
+                            <div class="card-rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+        
+                          </div>
+        
+                          <p class="price">
+                            $680
+                            <span>/ per person</span>
+                          </p>
+        
+                          <button class="btn btn-secondary">Đặt vé</button>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li>
+                      <div class="package-card">
+        
+                        <figure class="card-banner">
+                          <img src="./assets/images/packege-5.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <h3 class="h3 card-title">
+                            Tận hưởng tuần trăng mặt trong kỳ nghỉ</h3>
+        
+                          <p class="card-text">
+                            Tuần trăng mật là chuyến đi mà các cặp vợ chồng mới cưới cùng nhau tổ chức lễ cưới trong sự thân mật và riêng tư.
+                          </p>
+        
+                          <ul class="card-meta-list">
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="time"></ion-icon>
+        
+                                <p class="text">8D/4N</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="people"></ion-icon>
+        
+                                <p class="text">pax: 23</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="location"></ion-icon>
+        
+                                <p class="text">Korea</p>
+                              </div>
+                            </li>
+        
+                          </ul>
+        
+                        </div>
+        
+                        <div class="card-price">
+        
+                          <div class="wrapper">
+        
+                            <p class="reviews">(20 reviews)</p>
+        
+                            <div class="card-rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+        
+                          </div>
+        
+                          <p class="price">
+                            $520
+                            <span>/ per person</span>
+                          </p>
+        
+                          <button class="btn btn-secondary">Đặt vé</button>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li>
+                      <div class="package-card">
+        
+                        <figure class="card-banner">
+                          <img src="./assets/images/packege-6.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <h3 class="h3 card-title">Khám phá dung nham núi lửa từ phía trên</h3>
+        
+                          <p class="card-text">
+                            Núi lửa là một vết đứt gãy trong lớp vỏ của một hành tinh, chẳng hạn như Trái đất, cho phép dung nham, 
+                            tro núi lửa và khí thoát ra khỏi buồng magma bên dưới bề mặt.
+                          </p>
+        
+                          <ul class="card-meta-list">
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="time"></ion-icon>
+        
+                                <p class="text">10D/8N</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="people"></ion-icon>
+        
+                                <p class="text">pax: 7</p>
+                              </div>
+                            </li>
+        
+                            <li class="card-meta-item">
+                              <div class="meta-box">
+                                <ion-icon name="location"></ion-icon>
+        
+                                <p class="text">China</p>
+                              </div>
+                            </li>
+        
+                          </ul>
+        
+                        </div>
+        
+                        <div class="card-price">
+        
+                          <div class="wrapper">
+        
+                            <p class="reviews">(30 reviews)</p>
+        
+                            <div class="card-rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+        
+                          </div>
+        
+                          <p class="price">
+                            $900
+                            <span>/ per person</span>
+                          </p>
+        
+                          <button class="btn btn-secondary">Đặt vé</button>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                  </ul>
+        
+                  <button class="btn btn-primary">Khám phá thêm</button>
+        
+                </div>
+              </section>
+        
+              
+              <!-- GALLERY -->
+              <section class="gallery" id="gallery">
+                <div class="container">
+                    <p class="section-subtitle">Trưng bày ảnh</p>
+                    <h2 class="h2 section-title">Ảnh từ khách du lịch</h2>
+                    <p class="section-text">
+                      Du lịch quốc tế là du lịch vượt qua biên giới quốc gia. 
+                      Toàn cầu hóa đã làm cho du lịch trở thành một hoạt động giải trí phổ biến trên toàn cầu.
+                    </p>
+
+                    <ul class="gallery-list">
+
+                        <li class="gallery-item">
+                          <figure class="gallery-image">
+                            <img src="./assets/images/gallery-6.jpg" alt="Gallery image">
+                          </figure>
+                        </li>
+            
+                        <li class="gallery-item">
+                          <figure class="gallery-image">
+                            <img src="./assets/images/gallery-7.jpg" alt="Gallery image">
+                          </figure>
+                        </li>
+            
+                        <li class="gallery-item">
+                          <figure class="gallery-image">
+                            <img src="./assets/images/gallery-8.jpg" alt="Gallery image">
+                          </figure>
+                        </li>
+            
+                        <li class="gallery-item">
+                          <figure class="gallery-image">
+                            <img src="./assets/images/gallery-9.jpg" alt="Gallery image">
+                          </figure>
+                        </li>
+            
+                        <li class="gallery-item">
+                          <figure class="gallery-image">
+                            <img src="./assets/images/gallery-10.jpg" alt="Gallery image">
+                          </figure>
+                        </li>
+            
+                      </ul>
+            
+                </div>
+              </section>
+        
+
+              <!-- CONTACT -->
+              <section class="cta" id="contact">
+                <div class="container">
+                    <div class="cta-content">
+                        <p class="section-subtitle">Liên hệ</p>
+                        <h2 class="h2 section-title"> 
+                          Rất vui vì đã liên hệ với chúng tôi! Xin cảm ơn
+                          
+                        </h2>
+
+                        <p class="section-text">
+                          
+                        Chúng tôi xin chân thành cảm ơn quý khách đã lựa chọn dịch vụ đặt vé cho chuyến đi lần này !
+                        </p>
+                    </div>
+                    <button class="btn btn-secondary">Liên hệ với chúng tôi</button>
+                </div>
+              </section>
+        </article>
+    </main>
+
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+       <div class="footer-top">
+        <div class="container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Travel logo">
+                </a>
+                <p class="footer-text">
+                  Chúng tôi là một trang web du lịch uy tín và đáng tin cậy giúp bạn đặt tour dễ dàng hơn.
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="contact-title">Liên hệ</h4>
+                <p class="contact-text">Hãy gọi chúng tôi</p>
+
+                <ul>
+
+                    <li class="contact-item">
+                      <ion-icon name="call-outline"></ion-icon>
+        
+                      <a href="tel:+01123456790" class="contact-link">+01 (348) 971 25</a>
+                    </li>
+        
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+        
+                      <a href="mailto:info.tourly.com" class="contact-link">travel.tourly.com</a>
+                    </li>
+        
+                    <li class="contact-item">
+                      <ion-icon name="location-outline"></ion-icon>
+        
+                      <address>21 Tran Hung Dao, Viet Nam</address>
+                    </li>
+        
+                  </ul>
+            </div>
+
+            <div class="footer-form">
+
+                <p class="form-text">
+                  
+                  Hãy nhấn đăng ký để biết thêm thông tin chi tiết !
+                 
+                </p>
+      
+                <form action="" class="form-wrapper">
+                  <input type="email" name="email" class="input-field" placeholder="Email của bạn ..." required>
+      
+                  <button type="submit" class="btn btn-secondary">Đăng ký</button>
+                </form>
+      
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <div class="container">
+      
+              <p class="copyright">
+                &copy; Họ tên: Văn Thị Thu Oanh <a href="">DH52102172</a>. Lớp D21_TH01 | Nhóm 2 Thứ 7 Ca 4
+              </p>
+      
+              <ul class="footer-bottom-list">
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">Chính sách</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">Điều kiện</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">Q&A</a>
+                </li>
+      
+              </ul>
+      
+
+        </div>
+       </div>
+    </footer>
+
+    
+    <a href="#top" class="go-top active" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+    
+    
+    
+    <script src="./assets/js/script.js"></script>
+    
+      
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>  
+
+
+
+ 
+
